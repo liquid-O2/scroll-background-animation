@@ -26,16 +26,11 @@ module.exports = {
     {
       resolve: `gatsby-source-datocms`,
       options: {
-        apiToken: `47244b367354d9df68bc03a796cf21`, 
-      }
+        apiToken: `47244b367354d9df68bc03a796cf21`,
+      },
     },
     `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-plugin-scroll-reveal`,
-      options: {
-        once: true,
-      }
-    },
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -47,6 +42,13 @@ module.exports = {
         background_color: `#000`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-scroll-reveal`,
+      options: {
+        once: false,
+        threshold:0.5
       },
     },
   ],
